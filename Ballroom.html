@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ballroom Dance 💃🕺</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10.6% 23.3%,
+          rgb(186, 162, 252) 0%,
+          rgb(176, 248, 242) 72.4%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #2c786c;
+      }
+      h2 {
+        text-align: center;
+        padding: 20px;
+        border: 2px solid aquamarine;
+        font-size: 25px;
+        border-radius: 4px;
+        color: #90f6d7;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 24px;
+        margin: 0 0 15px;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #defcf9;
+        color: #8971d0;
+        font-size: 20px;
+        line-height: 22px;
+        padding: 13px 18px;
+        border: 1px solid #d59bf6;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        border-radius: 20px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .learn-more {
+        text-decoration: none;
+        color: blue;
+        font-size: 18px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        background: #c9fdd7;
+      }
+      .footer {
+        text-align: center;
+        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 35px 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Ballroom Dance</h1>
+      <h2 class="footer">Especially Latin Dance</h2>
+      <img
+      src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/124/original/Latin_Dances.jpeg?1659983947
+      alt="Latin Dance" width="300" />
+      <p class="footer">
+        <strong>Latin Dance</strong> is a general label, and a term in partner
+        dance competition jargon. It refers to types of ballroom dance and folk
+        dance that (with few exceptions such as the United States) originated in
+        Latin America. The category of Latin dances in the international
+        dancesport competitions consists of the cha-cha-cha, rumba, samba, paso
+        doble, and also the jive of United States origin. Many dance styles from
+        different areas of the world were integrated into Latin dance. Such
+        styles came about which comprised the main categories of Latin dancing:
+        Salsa, Mambo, Merengue, Rumba, Cha Cha Cha, Bachata, and Samba.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Latin_dance"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <br />
+      <button class="apply-button"><strong>👉 Apply Now</strong></button>
+      <p>This page was built by Olha Bondarenko</p>
+    </div>
+    <script>
+      function apply() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age <= 16 || age >= 50) {
+          alert("Sorry, you can't apply☹️");
+        } else {
+          let phone = prompt("What is your phone number?");
+          alert("Thank you " + name + "! We'll be in touch by phone!📲");
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
